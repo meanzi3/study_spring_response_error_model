@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus;
 public enum ErrorCode {
 
   OK(2000, HttpStatus.OK, "OK"),
-  BAD_REQUEST(1000, HttpStatus.BAD_REQUEST, "잘못된 파라미터 입니다.");
+  BAD_REQUEST(500, HttpStatus.BAD_REQUEST, "잘못된 파라미터 입니다.");
 
   @Getter
   private final int code;
